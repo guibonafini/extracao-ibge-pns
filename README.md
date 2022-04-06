@@ -11,6 +11,9 @@ Os campos extraídos da pesquisa são os seguintes:
 
 
 Os dados extraídos se encontram no arquivo `dados/toy.zip`
+
+Os resultados obtidos no Weka, se encontram na pasta `resultados/`
+
 ---
 
 ## Fonte de dados
