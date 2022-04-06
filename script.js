@@ -29,7 +29,7 @@ const PROCURA_EMERGENCIA_POSITION = 383;
 const ESCOLARIDADE_POSITION = 1512;
 const PLANO_SAUDE_POSITION = 354;
 
-let rows = ['escolaridade,plano_odonto,plano_saude,atendimento_publico'];
+let rows = ['escolaridade,plano_saude,atendimento_publico'];
 
 (async function processLineByLine() {
     try {

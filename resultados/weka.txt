@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     toy
+Instances:    196199
+Attributes:   3
+              escolaridade
+              plano_saude
+              atendimento_publico
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+plano_saude = nao: fundamental_incompleto (153731.0/87968.0)
+plano_saude = sim
+|   atendimento_publico = sim: medio_completo (5779.0/4064.0)
+|   atendimento_publico = nao: superior_completo (36689.0/23364.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.19 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       80803               41.1842 %
+Incorrectly Classified Instances    115396               58.8158 %
+Kappa statistic                          0.1299
+Mean absolute error                      0.2135
+Root mean squared error                  0.3267
+Relative absolute error                 96.6813 %
+Root relative squared error             98.3269 %
+Total Number of Instances           196199     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,887    0,721    0,428      0,887    0,577      0,196    0,585     0,423     fundamental_incompleto
+                 0,000    0,000    ?          0,000    ?          ?        0,565     0,112     sem_instrucao
+                 0,039    0,027    0,297      0,039    0,069      0,031    0,519     0,231     medio_completo
+                 0,000    0,000    ?          0,000    ?          ?        0,594     0,055     superior_incompleto
+                 0,000    0,000    ?          0,000    ?          ?        0,542     0,079     medio_incompleto
+                 0,591    0,135    0,363      0,591    0,450      0,373    0,741     0,271     superior_completo
+                 0,000    0,000    ?          0,000    ?          ?        0,539     0,080     fundamental_completo
+Weighted Avg.    0,412    0,294    ?          0,412    ?          ?        0,580     0,267     
+
+=== Confusion Matrix ===
+
+     a     b     c     d     e     f     g   <-- classified as
+ 65763     0  1683     0     0  6664     0 |     a = fundamental_incompleto
+ 17331     0   368     0     0  1575     0 |     b = sem_instrucao
+ 32928     0  1715     0     0  8936     0 |     c = medio_completo
+  4850     0   308     0     0  2850     0 |     d = superior_incompleto
+ 12218     0   351     0     0  1643     0 |     e = medio_incompleto
+  8283     0   934     0     0 13325     0 |     f = superior_completo
+ 12358     0   420     0     0  1696     0 |     g = fundamental_completo
+
